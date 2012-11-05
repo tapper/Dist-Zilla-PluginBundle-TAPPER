@@ -1,0 +1,4 @@
+Revision history for {{$dist->name}}
+
+{{$NEXT}}
+        - Dist::Zilla pluginbundle for all Tapper libs

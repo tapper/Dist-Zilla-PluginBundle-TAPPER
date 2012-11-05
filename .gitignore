@@ -1,0 +1,4 @@
+.*
+!.gitignore
+Dist-Zilla-PluginBundle-TAPPER-*
+Debian_CPANTS.txt
