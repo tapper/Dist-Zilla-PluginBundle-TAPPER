@@ -1,4 +1,6 @@
 Revision history for {{$dist->name}}
 
 {{$NEXT}}
+
+0.001     2012-11-19
         - Dist::Zilla pluginbundle for all Tapper libs
