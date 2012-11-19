@@ -1,6 +1,7 @@
 Revision history for {{$dist->name}}
 
 {{$NEXT}}
+        - dzil pluginbundle TAPPER
 
 0.001     2012-11-19
         - Dist::Zilla pluginbundle for all Tapper libs
