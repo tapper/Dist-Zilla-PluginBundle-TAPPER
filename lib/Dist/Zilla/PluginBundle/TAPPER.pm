@@ -32,8 +32,8 @@ It is roughly equivalent to:
   [PkgVersion]
   [PodSyntaxTests]
   [PodCoverageTests]
-  [NoTabsTests]
-  [EOLTests]
+  [Test::NoTabs]
+  [Test::EOL]
 
   [MetaResources]
   repository.type   = git
@@ -379,7 +379,7 @@ method configure {
         PodSyntaxTests
     ));
 
-    $self->add_plugins('NoTabsTests')
+    $self->add_plugins('Test::NoTabs')
         unless $self->disable_tab_tests;
 
     $self->add_plugins('PodCoverageTests')
@@ -398,7 +398,7 @@ method configure {
             authority   => $self->authority,
             do_metadata => 1,
         }],
-        [EOLTests => {
+        ['Test::EOL' => {
             trailing_whitespace => $self->disable_trailing_whitespace_tests ? 0 : 1,
         }],
     );
