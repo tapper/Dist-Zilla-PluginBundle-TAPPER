@@ -2,6 +2,9 @@ Revision history for {{$dist->name}}
 
 {{$NEXT}}
         - dzil pluginbundle TAPPER
+        - switch [NoTabsTests] to [Test::NoTabs]
+          and    [EOLTests]    to [Test::EOL]
+          as the previous plugins are now deprecated.
 
 0.001     2012-11-19
         - Dist::Zilla pluginbundle for all Tapper libs
