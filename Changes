@@ -1,6 +1,8 @@
 Revision history for {{$dist->name}}
 
 {{$NEXT}}
+
+0.002     2015-04-02
         - dzil pluginbundle TAPPER
         - switch [NoTabsTests] to [Test::NoTabs]
           and    [EOLTests]    to [Test::EOL]
