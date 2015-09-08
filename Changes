@@ -1,6 +1,8 @@
 Revision history for {{$dist->name}}
 
 {{$NEXT}}
+        - dependencies cleanup
+        - add [Test::Compile]
 
 0.003     2015-09-08
         - replace [PodCoverageTests] with [Test::Pod::Coverage::Configurable],
