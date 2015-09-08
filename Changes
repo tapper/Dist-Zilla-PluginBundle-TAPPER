@@ -1,6 +1,9 @@
 Revision history for {{$dist->name}}
 
 {{$NEXT}}
+        - replace [PodCoverageTests] with [Test::Pod::Coverage::Configurable],
+          now allowing an additional regex which modules to skip:
+            skip_pod_modules = qr/^My::Known::Undocumented::Plugins::/
 
 0.002     2015-04-02
         - dzil pluginbundle TAPPER
