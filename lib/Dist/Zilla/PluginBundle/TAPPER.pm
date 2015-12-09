@@ -433,11 +433,12 @@ method configure {
     $self->add_plugins(['NextRelease' =>
                        { format => '%-9v %{yyyy-MM-dd}d' }]);
 
-    $self->add_plugins(['Git::CheckFor::CorrectBranch' =>
-                        { release_branch => ($self->has_release_branch
-                                             ? $self->release_branch
-                                             : 'master')
-                        }]);
+    # Not required anymore as we release from branches nowadays
+    # $self->add_plugins(['Git::CheckFor::CorrectBranch' =>
+    #                     { release_branch => ($self->has_release_branch
+    #                                          ? $self->release_branch
+    #                                          : 'master')
+    #                     }]);
 
     if ($self->has_static_version) {
             $self->add_plugins(['StaticVersion' => { version => $self->static_version }]);
