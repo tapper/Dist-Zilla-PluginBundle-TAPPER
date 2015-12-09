@@ -1,6 +1,8 @@
 Revision history for {{$dist->name}}
 
 {{$NEXT}}
+
+0.005     2015-12-09
         - do not require release branch anymore
 
 0.004     2015-09-08
