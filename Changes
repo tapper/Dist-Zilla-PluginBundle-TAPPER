@@ -1,6 +1,8 @@
 Revision history for {{$dist->name}}
 
 {{$NEXT}}
+
+0.006     2017-02-08
         - add Test::Compile with option 'test_compile_skip'
 
 0.005     2015-12-09
