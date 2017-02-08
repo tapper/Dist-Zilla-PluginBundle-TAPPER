@@ -193,6 +193,12 @@ has skip_pod_modules => (
     },
 );
 
+has test_compile_skip => (
+    is        => 'ro',
+    isa       => Str,
+    predicate => 'has_test_compile_skip',
+);
+
 method _build_homepage_url {
     return sprintf $self->_cpansearch_pattern, $self->dist;
 }
@@ -388,6 +394,12 @@ method configure {
         PkgVersion
         PodSyntaxTests
     ));
+
+    $self->add_plugins(['Test::Compile' => {
+                                            $self->has_test_compile_skip
+                                            ? (skip => $self->test_compile_skip)
+                                            : (),
+                                           }]);
 
     $self->add_plugins('Test::NoTabs')
         unless $self->disable_tab_tests;

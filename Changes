@@ -1,6 +1,7 @@
 Revision history for {{$dist->name}}
 
 {{$NEXT}}
+        - add Test::Compile with option 'test_compile_skip'
 
 0.005     2015-12-09
         - do not require release branch anymore
